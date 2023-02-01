@@ -1,0 +1,58 @@
+*{
+    margin:0px;
+    padding:0px;
+  }
+  
+  h1{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Source Serif Pro', serif;
+    
+  }
+  
+ 
+  
+  .fa:hover{
+      color: darkcyan;
+  }
+  
+  .containergridP{
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  /*CSS Grid*/
+  .section-grid{
+     display: flex; 
+     padding-left: 25px;
+     padding-right: 25px;
+  }
+  .grid-prod{
+    flex: 1 1 auto;
+    display: flex; 
+    flex-flow: row wrap;  
+  }
+  .prod-grid{
+    background-color: rgb(126, 125, 125);
+    margin:2%;
+    padding:12px;
+    border-radius: 5px;
+    border: 5px solid rgb(228, 226, 226);
+  }
+  
+  .prod-grid img{
+    width:100%;
+  }
+  h3, p{
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: aliceblue;
+  }
+  .btn-Vermas{
+    align-items: center;
+    width: 100px;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  

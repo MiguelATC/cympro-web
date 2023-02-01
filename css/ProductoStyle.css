@@ -1,0 +1,72 @@
+.body{
+    background-color: rgb(216, 213, 213)
+}
+button.btn-eliminar{
+    background-color: #ffffff; color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    margin-top: 3%;
+    margin-right: 3%;
+}
+button.btn-editar{
+    background-color: #000000; color: rgb(248, 247, 247);
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    margin-top: 3%;
+    margin-right: 3%;
+}
+button.btn-eliminar:hover {
+    background-color: #3d4645; /* Green */
+    color: white;
+  }
+
+  button.btn-editar:hover {
+    background-color: #fafcfb; /* Green */
+    color: rgb(0, 0, 0);
+  }
+  button.btn-eliminar-Proyecto{
+    background-color: #ffffff; color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    margin-top: 3%;
+    margin-right: 3%;
+}
+  button.btn-eliminar-Proyecto:hover {
+    background-color: #3d4645; /* Green */
+    color: white;
+  }
+
+  button.btn-eliminar-Categoria{
+    background-color: #ffffff; color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    margin-top: 3%;
+    margin-right: 3%;
+}
+  button.btn-eliminar-Categoria:hover {
+    background-color: #3d4645; /* Green */
+    color: white;
+  }
+  .imgRedonda {
+    /*Logo de la página*/
+    width: 100px;
+    height: 60px;
+}
+
+.nav-link:hover {
+    background-color: #3d4645; /* Green */
+    color: white;
+}
+#n,#Nadvar{
+  background-color: #030303;
+}
+.nav-link{
+  color: white;
+}
+.container{
+  background-color: rgb(100, 73, 43);
+}

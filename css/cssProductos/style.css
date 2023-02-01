@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+body {
+  
+  font-weight: 400;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2B2D42;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+a {
+  color: #2B2D42;
+  font-weight: 500;
+  -webkit-transition: 0.2s color;
+  transition: 0.2s color;
+}
+
+a:hover, a:focus {
+  color: #352e2f;
+  text-decoration: none;
+  outline: none;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+/*----------------------------*\
+	Section
+\*----------------------------*/
+
+.section {
+  padding-top: 100px;/*espacio de arriba o margen de la section*/
+  padding-bottom: 30px;
+}
+
+/*Botones flechas de bootstrap*/
+/*No*/
+
+/*Input filtrar*/
+
+.product-details {
+  border: 1px solid rgb(85, 76, 76) !important;
+  height: 450px;
+  width: 50%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+/*Tipos de madera*/
+.row-image{
+  margin-top: 40px;
+}
+
+.row-image a{
+  cursor: pointer;
+}
+.product-options input {
+  color: rgb(116, 110, 110) ;
+  background-color:#000000 !important;
+  border:none ;
+  border-bottom:1px solid rgb(27, 26, 26) !important;/*borde inferior del input*/
+  size: 0ch;
+  width: 100%;
+}
+
+.product-options input:focus {
+  border-color: rgb(0, 0, 0);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075)inset, 0 0 8px rgba(0, 0, 0, 0.6);
+  outline: 0 none;
+}
+
+/*Ordenamiento del botón*/
+#product-imgs {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 5px;
+}
+
+.row {
+  align-items: center;
+
+}
+
+#product-main-img {
+  width: 562px;
+  display:grid;
+  grid-template-columns: repeat(3,10% 80% 10%);
+  align-items: center;
+  
+}
+
+#product-main-img .slick-next {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+  right: 15px;
+}
+
+/*----------------------------*\
+	Product view
+\*----------------------------*/
+
+#product-main-img .slick-prev {/*boton escondido*/
+  left: 15px;
+}
+
+
+#product-main-img .slick-prev, #product-main-img .slick-next {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+#product-main-img:hover .slick-prev, #product-main-img:hover .slick-next {
+  opacity: 1;
+  visibility: visible;
+}
+
+#product-main-img .zoomImg {
+  background-color: #FFF;
+}
+
+#product-imgs .product-preview {
+  margin: 0px 5px;/*Espacio entre imagenes del slider del producto*/
+  border: 1px solid #E4E7ED;
+}
+
+#product-imgs .product-preview.slick-current {
+  border-color: #332a2c;/*el borde rosa de la imagen*/
+}
+
+.product-preview img {
+  width: 100%;
+}
+
+/*----------------------------*\
+	Product details
+\*----------------------------*/
+
+.product-details .product-name {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.product-details .product-options {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*----------------------------*\
+	Arrows
+\*----------------------------*/
+
+.slick-prev, .slick-next {/*Tamaño del botón next*/
+  width: 40px;
+  height: 40px;
+  border: 1px solid #9C9C9C;
+  background-color: #9C9C9C;
+  border-radius: 50%;
+  z-index: 22;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  cursor: pointer;
+}
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+  background-color: #362f30;
+  border-color: #362f30;
+}
+
+.slick-prev:before, .slick-next:before {/*icono*/
+  font-family: FontAwesome;
+  color: #ffffff;
+}
+
+.slick-prev:before {/*icono*/
+  content: "\f104";
+}
+
+.slick-next:before {
+  content: "\f105";
+}
+
+.slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
+  color: #FFF;
+}
+
+@media screen and (max-width:550px) {
+.product-details{
+  width: 100%;
+  height: 250px;
+}
+.slider-productos{
+  display: none !important;
+}
+#product-main-img{
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#product-main-img .product-preview{
+  width: 280px;
+  height: 280px;
+}
+.slick-list{
+  width: 280px;
+  height: 280px;
+}
+
+#product-main-img .slick-next {
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px); 
+  right: 0px;
+}
+.row-image .col-md-2{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+}
